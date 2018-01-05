@@ -1,0 +1,316 @@
+/*----------------------------------------------------------------------
+Author: Deyrold Casinabe
+Date Created: Wednesday, 5 April 2017
+Date Submitted: Friday, 19 May 2017
+
+*A project for AS114/AS115 - IT CORE 7 - Internet & Web Application
+*Instructor: Rodel Sales
+*Second Semester, S.Y. 2016 - 2017
+*A Portfolio Website
+----------------------------------------------------------------------*/
+
+
+
+/*-------------------------
+          GLOBAL
+--------------------------*/
+@font-face {
+  font-family: Montserrat-Black;
+  src: url(fonts/Montserrat-Black.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: Lato-Regular;
+  src: url(fonts/Lato-Regular.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h1{
+  color: #0b172d;
+  font-family: Montserrat-Black;
+  margin-bottom: 10px;
+}
+
+p {
+  color: black;
+  font-family: Lato-Regular;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+::selection{
+  background: white;
+}
+
+
+/*-------------------------
+      NAVIGATION BAR
+--------------------------*/
+.navbar-container {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  /*border: 1px solid black; /* for debugging*/
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 50px;
+}
+
+.logo img{
+  transition: 0.4s ease;
+}
+
+.logo img:hover {
+  transform: scale(0.95);
+}
+
+
+/*-------------------------
+          MYWORKS
+--------------------------*/
+.my-works-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.my-works {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.my-works-banner {
+  width: 100%;
+}
+
+.my-works-intro {
+  width: 100%;
+  text-align: center;
+  padding: 0 350px 0 350px;
+  margin-bottom: 70px;
+  margin-top: 60px;
+}
+
+.my-works-subintro{
+  margin-bottom: 35px;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+.my-works-items-col1 {
+  border: 5px solid white;
+  border-top: 10px solid white;
+  border-left: 10px solid white;
+  width: 50%;
+}
+
+.my-works-items-col2 {
+  border: 5px solid white;
+  border-top: 10px solid white;
+  border-right: 10px solid white;
+  width: 50%;
+}
+
+.my-works-items-col1 img,
+.my-works-items-col2 img {
+  margin-bottom: 5px;
+}
+
+.vid {
+  width: 100%;
+}
+
+/*-------------------------
+       MORE-PROJECTS
+--------------------------*/
+
+.more-proj-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    padding-top: 10px;
+}
+
+.button-container {
+  margin: 40px 0 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttoner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.message {
+  align-items: center;
+  background-color: white;
+  border: none;
+  padding: 20px 15px;
+  width: 250px;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Montserrat Extrabold';
+  font-size: 20px;
+  color: #0b172d;
+  transition-duration: 0.4s;
+  border: 4px solid #0b172d;
+}
+
+.message:hover{
+  background-color: #0b172d;
+  color: white;
+}
+
+.message2 {
+  align-items: center;
+  background-color: white;
+  border: none;
+  padding: 10px 15px;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Montserrat Extrabold';
+  font-size: 11px;
+  color: #0b172d;
+  transition-duration: 0.4s;
+  border: 3px solid #0b172d;
+}
+
+.message2:hover{
+  background-color: #0b172d;
+  color: white;
+}
+
+/*-------------------------
+       CONTACT FORM
+-------------------------*/
+.bgcolor {
+    background-color: #0b172d;
+    height: 100vh;
+}
+
+.logo2 {
+  filter: invert();
+}
+
+.contactform {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  width: 500px;
+}
+
+.contactform p {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 3px;
+}
+
+input[type=text] {
+  width: 500px;
+  height: 25px;
+}
+
+input[name=message]{
+  height: 180px;
+}
+
+input[type=submit] {
+  align-items: center;
+  background-color: white;
+  border: none;
+  padding: 10px 15px;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Montserrat Extrabold';
+  font-size: 11px;
+  color: #0b172d;
+  transition-duration: 0.4s;
+  margin-top: 20px;
+}
+
+input[type=submit]:hover {
+  background-color: #0b172d;
+  color: white;
+}
+
+.message3 {
+  align-items: center;
+  background-color: white;
+  border: none;
+  padding: 10px 15px;
+  width: 156px;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Montserrat Extrabold';
+  font-size: 11px;
+  color: #0b172d;
+  transition-duration: 0.4s;
+  border: 3px solid #0b172d;
+  margin-left: 430px;
+  margin-top: 5px;
+}
+
+.message3:hover{
+  background-color: #0b172d;
+  color: white;
+}
+
+
+/*-------------------------
+         RESPONSE
+--------------------------*/
+@media only screen and (max-width: 400px) {
+  .navbar,
+  .navbar img {
+    width: 100%;
+  }
+
+  .my-works,
+  .my-works-items-col1,
+  .my-works-items-col2 {
+    width: 100%;
+    border: 0;
+  }
+
+  .my-works-intro {
+    padding: 0 15px 0 15px;
+  }
+
+  .my-works-items-col1 img,
+  .my-works-items-col2 img{
+    margin-bottom: 10px;
+  }
+
+  .promo{
+    height: auto;
+  }
+
+  .vid {
+    width: 100%;
+  }
+  input[type=text] {
+    width: 100%;
+  }
+}
